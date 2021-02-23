@@ -3,113 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>와이어프레임-가로 스타일1 깃허브</title>
+    <title> 02_19_세로형_와이어프레임_혼자하기 </title>
     
     <!-- icons -->
-    <link rel="stylesheet" href="./icon/font-awesome.css">
+    <!-- <link rel="stylesheet" href="./icon/font-awesome.css"> -->
     <script src="./icon/fontawesome.js"></script>
     
     <!-- reset.css style.css -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     
+    <script src="./js/lib/jquery.min.js"></script>
 </head>
 <body>
-<div id="wrap">
-    <!-- header -->
-    <header id="header" class="clearfix">
-        <div class="left-box">
-            <span>로고</span>
-        </div>
-        <div class="right-box">
-            <nav id="nav">
-                <ul class="main-btn-wrap clearfix">
-                    <li tabindex="0">
-                        <a href="#" class="main-btn" title='MENU-1'>MENU-1</a>
-                        <div class="sub sub1">
-                            <ul>
-                                <li><a href="#" title='SUBMENU-1'>SUBMENU-1</a></li>
-                                <li><a href="#" title='SUBMENU-2'>SUBMENU-2</a></li>
-                                <li><a href="#" title='SUBMENU-3'>SUBMENU-3</a></li>
-                                <li><a href="#" title='SUBMENU-4'>SUBMENU-4</a></li>
-                            </ul>
-                        </div>
-
-                    </li>
-                    <li tabindex="0">
-                        <a href="#" class="main-btn" title='MENU-2'>MENU-2</a>
-                        <div class="sub sub2">
-                            <ul>
-                                <li><a href="#"title='SUBMENU-1'>SUBMENU-1</a></li>
-                                <li><a href="#"title='SUBMENU-2'>SUBMENU-2</a></li>
-                                <li><a href="#"title='SUBMENU-3'>SUBMENU-3</a></li>
-                                <li><a href="#"title='SUBMENU-4'>SUBMENU-4</a></li>
-                            </ul>
-                        </div>
-
-                    </li>                   
-                    <li tabindex="0">
-                        <a href="#" class="main-btn" stitle='MENU-3'>MENU-3</a>
-                        <div class="sub sub3">
-                            <ul>
-                                <li><a href="#"title='SUBMENU-1'>SUBMENU-1</a></li>
-                                <li><a href="#"title='SUBMENU-2'>SUBMENU-2</a></li>
-                                <li><a href="#"title='SUBMENU-3'>SUBMENU-3</a></li>
-                                <li><a href="#"title='SUBMENU-4'>SUBMENU-4</a></li>
-                            </ul>
-                        </div>
-
-                    </li>
-                    <li tabindex="0">
-                        <a href="#" class="main-btn" title='MENU-4'>MENU-4</a>
-                        <div class="sub sub4">
-                            <ul>
-                                <li><a href="#" title='SUBMENU-1'>SUBMENU-1</a></li>
-                                <li><a href="#" title='SUBMENU-2'>SUBMENU-2</a></li>
-                                <li><a href="#" title='SUBMENU-3'>SUBMENU-3</a></li>
-                                <li><a href="#" title='SUBMENU-4'>SUBMENU-4</a></li>
-                            </ul>
-                        </div>
-
-                    </li>
-                </ul>
-            </nav>
-        </div>
+<div id="wrap" class="clearfix">
+    <header id="header">
+        
+        <!-- <h1 class="logo-wrap blind">로고</h1> -->
+        <h1 class="logo-wrap"><a href="#"><i class="fas fa-dog"></i></a></h1>
+        
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="javascript:" onclick='goUrl("main1")'class="main-btn">비숑프리제</a>
+                    <div class="sub sub1">
+                        <ul>
+                            <li><a href="javascript:" onclick='goUrl("main1-1")' class="sub-btn">특징</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main1-2")' class="sub-btn">미용</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main1-3")' class="sub-btn">질병</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main1-4")' class="sub-btn">간식</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:" onclick='goUrl("main2")' class="main-btn">포메라니안</a>
+                    <div class="sub sub2">
+                        <ul>
+                            <li><a href="javascript:" onclick='goUrl("main2-1")' class="sub-btn">특징</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main2-2")' class="sub-btn">미용</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main2-3")' class="sub-btn">질병</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main2-4")' class="sub-btn">간식</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:" onclick='goUrl("main3")' class="main-btn">푸들</a>
+                    <div class="sub sub3">
+                        <ul>
+                            <li><a href="javascript:" onclick='goUrl("main3-1")' class="sub-btn">특징</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main3-2")' class="sub-btn">미용</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main3-3")' class="sub-btn">질병</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main3-4")' class="sub-btn">간식</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:" onclick='goUrl("main4")' class="main-btn">치와와</a>
+                    <div class="sub sub4">
+                        <ul>
+                            <li><a href="javascript:" onclick='goUrl("main4-1")' class="sub-btn">특징</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main4-2")' class="sub-btn">미용</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main4-3")' class="sub-btn">질병</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main4-4")' class="sub-btn">간식</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <!-- main -->
     <main id="main">
         <section id="section1">
-            <span>이미지 슬라이드</span>
+            
+            <div class="slide-container">
+                <div class="sldie-view">
+                    <ul class="slide-wrap">
+                        <li class="slide slide3"></li>
+                        <li class="slide slide0"></li>
+                        <li class="slide slide1"></li>
+                        <li class="slide slide2"></li>
+                        <li class="slide slide3"></li>
+                        <li class="slide slide0"></li>
+                    </ul>
+                </div> 
+                
+                <span class="prev-btn-wrap">
+                    <a href="#" class="prev-btn"></a>
+                </span>
+                <span class="next-btn-wrap">
+                    <a href="#" class="next-btn"></a>
+                </span>
+
+            </div>
+
         </section>
         <section id="section2" class="clearfix">
-            <div class="left-box">
-                <span>공지사항/갤러리</span>
+            <div class="column column1">
+                <div class="gap">
+                    <div class="notice-title">
+                        <ul class="clearfix">
+                            <li>
+                                <h2>게시글</h2>
+                            </li>
+                            <li><a href="javascript:" onclick='goUrl("noticeMore")' title="more"><img src="./img/more.gif" alt="more"></a></li>
+                        </ul>
+                    </div>
+                    <div class="notice-content">
+                        <ul>
+                            <li>
+                                <span><a href="#" class="notice-btn" title="오늘도 당신의 반려견은 당신을 기다립니다.">오늘도 당신의 반려견은 당신을 기다립니다.</a></span>
+                                <span>2021-02-17</span>
+                            </li>
+                            <li>
+                                <span><a href="#" class="notice-btn" title="여러분의 반려견을 소개해주세요">여러분의 반려견을 소개해주세요</a></span>
+                                <span>2021-02-16</span>
+                            </li>
+                            <li>
+                                <span><a href="#" class="notice-btn" title="반려견의 간식을 담당하는 힐링펫을 소개합니다.">반려견의 간식을 담당하는 힐링펫을 소개합니다.  </a></span>
+                                <span>2021-02-15</span>
+                            </li>
+                            <li>
+                                <span><a href="#" class="notice-btn" title="다양한 반려견 옷들을 둘러볼 수 있는 바이담 수미 사이트">다양한 강아지 옷들을 둘러볼 수 있는 바이담 수미 사이트</a></span>
+                                <span>2021-02-14</span>
+                            </li>
+                            <li>
+                                <span><a href="#" class="notice-btn" title="반려견 입양을 원하시는분은 신사독을 이용하세요">반려견 입양을 원하시는분은 신사독을 이용하세요</a></span>
+                                <span>2021-02-13</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="center-box">
-                <span>배너</span>
+            <div class="column column2">
+                <div class="gap">
+                    <div class="gallery-wrap">
+                        <ul>
+                            <li>
+                                <div>
+                                    <a href="#" class="gallery-btn" title="gallery"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class="gallery-btn" title="gallery"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class="gallery-btn" title="gallery"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class="gallery-btn" title="gallery"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="right-box">
-                <span>바로가기</span>
+            <div class="column column3">
+                <div class="gap"> <!-- 위아래 여백 15 -->
+                    <div><a href="http://sinsadog.com/" class="banner-btn"></a></div>
+                    <div><a href="http://www.commondog.co.kr/" class="banner-btn"></a></div>
+                    <div><a href="http://harishelter.cafe24.com/?n_media=27758&n_query=%EB%B0%98%EB%A0%A4%EA%B2%AC%EC%9E%85%EC%96%91&n_rank=1&n_ad_group=grp-a001-01-000000019615342&n_ad=nad-a001-01-000000121914493&n_keyword_id=nkw-a001-01-000003456438592&n_keyword=%EB%B0%98%EB%A0%A4%EA%B2%AC%EC%9E%85%EC%96%91&n_campaign_type=1&n_ad_group_type=1" class="banner-btn"></a></div>
+                </div>
             </div>
-
         </section>
     </main>
-    <!-- footer -->
     <footer id="footer" class="clearfix">
-        <div class="left-box">
-            <span>로고</span>
+        <div class="left-wrap">
+            <h2>서울특별시 서초구 서초대로 78길 48 송림빌딩 13층 더조은 컴퓨터 학원</h2>
+            <h2>홈페이지 제작자 : 최제준</h2> 
         </div>
-        <div class="center-box">
-            <span>copyright</span>
+        <div class="right-wrap">
+            
+            <div class="sns-wrap">
+                <div class="gap"> <!-- 위아래 여백 15 -->
+                    <span><a href="https://m.facebook.com/?locale2=ko_KR" class="sns-btn"><i class="fab fa-facebook-square" title="facebook"></i></a></span>
+                    <span><a href="https://twitter.com/?lang=ko" class="sns-btn"><i class="fab fa-twitter-square" title="twitter"></i></a></span>
+                    <span><a href="https://www.instagram.com/" class="sns-btn"><i class="fab fa-instagram-square" title="instagram"></i></a></span>
+                    <span><a href="https://line.me/ko/" class="sns-btn"><i class="fab fa-line" title="line"></i></a></span>
+                </div>
+            </div>
+            <div class="family-wrap">
+                <div class="gap">
+                    <form name="familyForm" id="familyForm" method="" action="response.php">
+                        <select name="family" id="family" onchange="goFamily(familyForm.family.value);">
+                            <option value="">Family Site</option>
+                            <option value="https://www.thewalz.com/">애견카페</option>
+                            <option value="https://www.vuumpet.co.kr/?ACE_REF=adwords_g&ACE_KW=%EA%B0%95%EC%95%84%EC%A7%80%EC%9A%A9%ED%92%88&gclid=EAIaIQobChMI5d2kgNX17gIVDRBgCh06RwqmEAAYASAAEgKkkPD_BwE">펫드라이룸</option>
+                            <option value="http://lepetitchiot.com/?gclid=EAIaIQobChMIxNvI6dT17gIVi8EWBR3BIg2sEAAYAyAAEgJoFvD_BwE">애견용품</option>
+                            <option value="http://www.healingpet.co.kr/shop/shopbrand.html?xcode=011&type=X">힐링펫 </option>
+                            <option value="http://sinsadog.com/">신사독</option>
+                        </select>
+                    </form>
+                </div>    
+            </div>
         </div>
-        <div class="right-box">
-            <span>SNS</span>
-        </div>
-    
     </footer>
 </div>
-</header>
 
+<div id="modal">
+    <div class="gap">
+        <div class="content">
+            <h1 class="notice-text"></h1>
+        </div>
+    </div>
+</div>
+
+<div id="modalGallery">
+    <div class="gap">
+        <div class="content">
+            
+        </div>
+    </div>
+</div>
+<script src="./js/intro.js"></script>
 
 </body>
 </html>

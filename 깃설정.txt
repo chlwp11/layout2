@@ -73,11 +73,14 @@ $ git config user.name 'chlwp11'
 그리고 리포지토리 주소 복사
 https://github.com/chlwp11/layout1.git  : origin
 
-
+git add . 
+git commit -m 'Upload'
 명령어 구문
 git remote add origin 리포지토리 주소 붙여넣기
 
+git remote add origin https://github.com/chlwp11/layout2.git
 
+git remote add origin https://github.com/chlwp11/wireframe2.git
 ---------------------------------------------------
 깃 리포지토리 원격 접속
 
